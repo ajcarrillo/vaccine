@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible"
+        content="IE=edge" />
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/97030c5cd8.js"
+          crossorigin="anonymous"></script>
+  <link rel="preconnect"
+        href="https://fonts.googleapis.com" />
+  <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+  <link rel="stylesheet"
+        href="/src/assets/css/vaccine_build.css" />
+  <title>Vacuna</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="grid grid-cols-3">
+        <div class="col-span-2">
+          <h1 class="site-title">Vaccination</h1>
+        </div>
+        <div class="text-right self-center">
+          <input type="checkbox"
+                 class="check hidden"
+                 id="checked" />
+          <label class="text-2xl"
+                 for="checked">
+            <i class="fa-solid fa-bars"></i>
+          </label>
+          <nav class="navbar hidden">
+            <ul class="navbar-menu">
+              <li>Database</li>
+              <li>Education</li>
+              <li>News</li>
+              <li>Regulation</li>
+              <li>
+                <button class="btn btn-sapphire">Hoax Buster</button>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="hero mb-8">
+      <div class="container">
+        <div class="grid">
+          <div>
+            <h1 class="hero-title">Flight Virus With Vaccines</h1>
+            <p class="hero-description">
+              Let's stop this pandemic by killing the virus with a vaccine,
+              don't let yourself and your family get infected
+            </p>
+            <div class="hero-list-container mb-8">
+              <ul class="hero-list">
+                <li>
+                  <div class="hero-list-item flex items-center">
+                    <div class="hero-list-avatar btn btn-icon btn-yellow shadow">
+                      <span><i class="fa-solid fa-shield-blank"></i></span>
+                    </div>
+                    <span class="hero-list-title">Best protection</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="hero-list-item flex items-center">
+                    <div class="hero-list-avatar btn btn-icon btn-yellow shadow">
+                      <span><i class="fa-solid fa-star"></i></span>
+                    </div>
+                    <span class="hero-list-title">Selected Vaccines</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <section class="schedule-vax">
+              <div class="flex items-center mb-4">
+                <div class="btn btn-zumthor btn-icon shadow border border-white">
+                  <span><i class="fa-solid fa-clock"></i></span>
+                </div>
+                <span class="font-semibold text-lg text-blue-950">Schedule your vaccinations</span>
+              </div>
+              <section class="schedule-vax-form">
+                <ul class="schedule-vax-list">
+                  <li class="schedule-vax-list-item">
+                    <div class="schedule-vax-content">
+                      <div class="row-span-2">
+                        <div class="btn btn-zumthor btn-icon mr-2">
+                          <span><i class="fa-solid fa-location-pin"></i></span>
+                        </div>
+                      </div>
+                      <div class="row-span-2"></div>
+                      <div class="row-span-2 flex items-center">
+                        <span class="font-semibold text-xl">Location</span>
+                      </div>
+                      <div class="row-span-2">
+                        <span class="text-blue-950 font-bold text-xl">Jakarta Utara</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="schedule-vax-list-item">
+                    <div class="schedule-vax-content">
+                      <div class="row-span-2">
+                        <div class="btn btn-zumthor btn-icon mr-2">
+                          <span><i class="fa-solid fa-calendar-days"></i></span>
+                        </div>
+                      </div>
+                      <div class="row-span-2"></div>
+                      <div class="row-span-2 flex items-center">
+                        <span class="font-semibold text-xl">Date</span>
+                      </div>
+                      <div class="row-span-2">
+                        <span class="text-blue-950 font-bold text-xl">08 July 2021</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="schedule-vax-list-item">
+                    <div class="schedule-vax-content">
+                      <div class="row-span-2">
+                        <div class="btn btn-zumthor btn-icon mr-2">
+                          <span><i class="fa-solid fa-syringe"></i></span>
+                        </div>
+                      </div>
+                      <div class="row-span-2"></div>
+                      <div class="row-span-2 flex items-center">
+                        <span class="font-semibold text-xl">Vaccine Type</span>
+                      </div>
+                      <div class="row-span-2">
+                        <span class="text-blue-950 font-bold text-xl">Moderna</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="submit-button">
+                    <button class="btn btn-sapphire">Submit</button>
+                  </li>
+                </ul>
+              </section>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="why-should">
+      <div class="container">
+        <div>
+          <h2>Why should I vaccine?</h2>
+          <p>
+            In order to avoid any doubts about getting the COVID-19 vaccine,
+            identify the following 4 benefits of COVID-19 vaccination:
+          </p>
+        </div>
+        <div>
+          <article class="card">
+            <span><i class="fa-solid fa-sliders"></i></span>
+            <h3>Minimize the spread of viruses</h3>
+            <p>
+              Vaccine has been proven effective to prevent someone from getting
+              infected with Coronavirus
+            </p>
+          </article>
+          <article>
+            <span><i class="fa-solid fa-shield"></i></span>
+            <h3>Forming antibodies</h3>
+            <p>
+              COVID-19 vaccine proven to help shape antibody response for immune
+              system
+            </p>
+          </article>
+          <article class="card">
+            <span><i class="fa-solid fa-user-group"></i></span>
+            <h3>Protecting people nearby</h3>
+            <p>
+              The benefits of COVID-19 vaccination are the vaccine that we get
+              can also help protect people around us
+            </p>
+          </article>
+          <article class="card">
+            <span><i class="fa-solid fa-chart-line"></i></span>
+            <h3>Creating group immunity</h3>
+            <p>
+              COVID-19 vaccination is also beneficial for creating group
+              immunity or herd immunity.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="preparation">
+      <div class="container">
+        <div>
+          <h2>Preparations Before Vaccine</h2>
+          <p>
+            the success of vaccines is strongly influenced by the
+            strength of the body's immune system. Therefore, there are
+            several things that can be tried to make the COVID-19
+            vaccine work:
+          </p>
+        </div>
+        <div>
+          <ul>
+            <li>
+              <div>
+                <div>
+                  <span><i class="fa-solid fa-champagne-glasses"></i></i></span>
+                </div>
+                <div>
+                  <p>Avoid alcoholic beverages</p>
+                </div>
+                <div>
+                  <span><i class="fa-solid fa-heart"></i></span>
+                </div>
+              </div>
+              <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At beatae deserunt distinctio doloremque
+                  doloribus et iure magnam minima minus necessitatibus, nisi, numquam, officia perspiciatis quasi quo
+                  quod sequi soluta totam.</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <div><span><i class="fa-solid fa-xmark"></i></span></div>
+                <div>
+                  <p>Avoid stress</p>
+                </div>
+                <div><span><i class="fa-solid fa-heart"></i></span></div>
+              </div>
+              <div>
+                <p>
+                  Stress has a profound effect on immune work.
+                  Moreover, prolonged stress can increase cortisol
+                  production and oxidative stress in the body.
+                </p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <div><span><i class="fa-solid fa-chart-column"></i></span></div>
+                <div>
+                  <p>Eat healthy food</p>
+                </div>
+                <div><span><i class="fa-solid fa-heart"></i></span></div>
+              </div>
+              <div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque exercitationem illo minus nostrum
+                  obcaecati officia porro. Et, molestias, tempore. A architecto consequuntur cupiditate dolorem dolores
+                  excepturi mollitia ut velit, voluptatum.
+                </p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <div><span><i class="fa-solid fa-check"></i></span></div>
+                <div>
+                  <p>Get enough sleep</p>
+                </div>
+                <div><span><i class="fa-solid fa-heart"></i></span></div>
+              </div>
+              <div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque exercitationem illo minus nostrum
+                  obcaecati officia porro. Et, molestias, tempore. A architecto consequuntur cupiditate dolorem dolores
+                  excepturi mollitia ut velit, voluptatum.
+                </p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <div><span><i class="fa-solid fa-heart"></i></span></div>
+                <div>
+                  <p>Exercise or physical activity</p>
+                </div>
+                <div><span><i class="fa-solid fa-heart"></i></span></div>
+              </div>
+              <div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque exercitationem illo minus nostrum
+                  obcaecati officia porro. Et, molestias, tempore. A architecto consequuntur cupiditate dolorem dolores
+                  excepturi mollitia ut velit, voluptatum.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="emergency-contact">
+      <div class="container">
+        <div>
+          <h2>Emergency Contact</h2>
+          <p>
+            Contact one of the contacts below if you or your family feel
+            unwell and have similar symptoms such as Covid-19, make
+            sure you also take care of yourself before reporting to us :
+          </p>
+        </div>
+        <div>
+          <article class="card">
+            <div>
+              <div>
+                <div><i class="fa-solid fa-phone"></i></div>
+                <div>
+                  <h3>Call</h3>
+                </div>
+                <div>
+                  <span>021.123.145.14</span>
+                </div>
+              </div>
+            </div>
+            <div>
+              <button>Call Now</button>
+            </div>
+          </article>
+          <article class="card">
+            <div>
+              <div>
+                <div><i class="fa-solid fa-comment-dots"></i></div>
+                <div>
+                  <h3>Chat</h3>
+                </div>
+                <div>
+                  <span>021.123.145.14</span>
+                </div>
+              </div>
+            </div>
+            <div>
+              <button>Chat Now</button>
+            </div>
+          </article>
+          <article class="card">
+            <div>
+              <div>
+                <div><i class="fa-solid fa-video"></i></div>
+                <div>
+                  <h3>Video Call</h3>
+                </div>
+                <div>
+                  <span>021.123.145.14</span>
+                </div>
+              </div>
+            </div>
+            <div>
+              <button>Vide Call Now</button>
+            </div>
+          </article>
+          <article class="card">
+            <div>
+              <div>
+                <div><i class="fa-solid fa-envelope"></i></div>
+                <div>
+                  <h3>Message</h3>
+                </div>
+                <div>
+                  <span>021.123.145.14</span>
+                </div>
+              </div>
+            </div>
+            <div>
+              <button>Message Now</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="bg-blue-150">
+    <div class="container">
+      <div class="grid grid-cols-2">
+        <div>
+          <h2>Vaccination</h2>
+          <p>Our goal is to help the world free from the ongoing pandemic</p>
+        </div>
+        <div>
+          <ul>
+            <li>About</li>
+            <li>Company</li>
+            <li>Support</li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <div>
+          <span>@2021 Vaccination. All rights reserved</span>
+        </div>
+        <div>
+          <span>Terms & Agreements</span>
+          <span>Privacy Policy</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
