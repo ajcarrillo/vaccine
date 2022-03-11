@@ -1,0 +1,14 @@
+{
+  "name": "vaccine",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "watch-css": "npx tailwindcss -i ./src/assets/css/vaccine.css -o ./src/assets/css/vaccine_build.css --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.0.23"
+  }
+}
