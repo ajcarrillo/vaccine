@@ -6,6 +6,14 @@
     border: 1px solid red;
 }
 
+.text-blue-midnight {
+    @apply text-blue-950;
+}
+
+.border-white-ghost {
+    @apply border-neutral-150;
+}
+
 body {
     @apply text-gray-550;
     font-family: 'Open Sans', sans-serif;
@@ -109,7 +117,22 @@ p {
 }
 
 .card {
-    @apply debug;
+    @apply border-2 rounded border-white-ghost bg-white p-5 mb-6;
+}
+
+.card:hover {
+    @apply shadow-2xl shadow-blue-100 border-none
+}
+
+.card:hover>.btn {
+    @apply border-2 border-white;
+    -webkit-box-shadow: 0 14px 15px -10px rgba(8, 41, 177, 0.5);
+    -moz-box-shadow: 0 14px 15px -10px rgba(8, 41, 177, 0.5);
+    box-shadow: 0 14px 15px -10px rgba(8, 41, 177, 0.5);
+}
+
+.card>h3 {
+    @apply text-blue-midnight font-semibold text-lg py-4
 }
 
 .schedule-vax-form {
@@ -126,6 +149,14 @@ p {
 
 .submit-button>button {
     @apply w-full
+}
+
+.section-title {
+    @apply text-blue-midnight font-bold text-2xl mb-6;
+}
+
+.section-description {
+    @apply font-semibold
 }
 
 .btn {
@@ -163,4 +194,9 @@ p {
     width: 2.5rem !important;
     height: 2.5rem !important;
     padding: 0 !important;
+}
+
+.btn-icon-md {
+    width: 3rem !important;
+    height: 3rem !important;
 }
