@@ -38,7 +38,7 @@ p {
 }
 
 .navbar {
-    @apply font-bold absolute left-0 w-full text-center bg-white p-4
+    @apply font-bold absolute left-0 w-full text-center bg-white shadow-lg p-4 z-10;
 }
 
 .navbar-menu {
