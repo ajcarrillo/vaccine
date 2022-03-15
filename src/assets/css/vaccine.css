@@ -193,6 +193,10 @@ p {
     @apply text-xs
 }
 
+.card-contact:hover>.btn-call-to-action>.btn-zumthor {
+    @apply btn-sapphire;
+}
+
 /*********************** BUTTONS ***********************/
 .btn {
     @apply px-3 rounded text-center text-base;
@@ -234,6 +238,11 @@ p {
 .btn-icon-md {
     width: 3rem !important;
     height: 3rem !important;
+}
+
+.btn-icon-lg {
+    width: 3.5rem !important;
+    height: 3.5rem !important;
 }
 
 .btn-icon-xs {
