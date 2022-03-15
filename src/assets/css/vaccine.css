@@ -164,6 +164,15 @@ p {
     height: 58px;
 }
 
+.preparation-list-item.preparation-list-item-active {
+    @apply shadow-lg border-none;
+    height: auto !important;
+}
+
+.preparation-list-item.preparation-list-item-active>.preparation-list-content>.preparation-button-container>.preparation-button>span>i {
+    @apply rotate-180 text-gray-600;
+}
+
 .preparation-list-content {
     @apply flex items-baseline px-4 py-2;
 }
