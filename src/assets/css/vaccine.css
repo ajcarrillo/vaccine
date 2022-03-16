@@ -347,6 +347,14 @@ p {
     .preparation-list-item {
         @apply w-1/2 ml-auto;
     }
+
+    .card-contact-container {
+        @apply grid grid-cols-2 gap-4
+    }
+
+    .card-contact-container>.card {
+        @apply mb-0;
+    }
 }
 
 @media screen and (min-width:1024px) {
