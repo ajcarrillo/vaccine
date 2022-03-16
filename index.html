@@ -25,24 +25,25 @@
   <header>
     <div class="container">
       <div class="grid grid-cols-3">
-        <div class="col-span-2">
+        <div class="col-span-2 md:col-span-1">
           <h1 class="site-title">Vaccination</h1>
         </div>
-        <div class="text-right self-center">
+        <div class="text-right self-center md:col-span-2">
           <input type="checkbox"
                  class="check hidden"
                  id="checked" />
-          <label class="text-2xl"
+          <label id="menu"
+                 class="text-2xl"
                  for="checked">
             <i class="fa-solid fa-bars"></i>
           </label>
-          <nav class="navbar hidden">
+          <nav class="navbar">
             <ul class="navbar-menu">
               <li>Database</li>
               <li>Education</li>
               <li>News</li>
               <li>Regulation</li>
-              <li>
+              <li class="md:hidden lg:block">
                 <button class="btn btn-sapphire">Hoax Buster</button>
               </li>
             </ul>
@@ -53,101 +54,105 @@
   </header>
   <main>
     <section class="hero mb-8">
-      <div class="container">
-        <div class="grid">
-          <div>
+      <div class="container md:pt-6">
+        <div class="grid md:relative">
+          <div class="hero-gradient">
+            <div class="hero-img h-full"></div>
+          </div>
+          <div class="hero-intro-container md:w-1/2">
             <h1 class="hero-title">Flight Virus With Vaccines</h1>
             <p class="hero-description">
               Let's stop this pandemic by killing the virus with a vaccine,
               don't let yourself and your family get infected
             </p>
-            <div class="hero-list-container mb-8">
-              <ul class="hero-list">
-                <li>
-                  <div class="hero-list-item flex items-center">
-                    <div class="hero-list-avatar btn btn-icon btn-yellow shadow">
-                      <span><i class="fa-solid fa-shield-blank"></i></span>
+          </div>
+          <div class="hero-list-container mb-8 md:w-1/2">
+            <ul class="hero-list">
+              <li>
+                <div class="hero-list-item flex items-center">
+                  <div class="hero-list-avatar btn btn-icon btn-yellow shadow">
+                    <span><i class="fa-solid fa-shield-blank"></i></span>
+                  </div>
+                  <span class="hero-list-title">Best protection</span>
+                </div>
+              </li>
+              <li>
+                <div class="hero-list-item flex items-center">
+                  <div class="hero-list-avatar btn btn-icon btn-yellow shadow">
+                    <span><i class="fa-solid fa-star"></i></span>
+                  </div>
+                  <span class="hero-list-title">Selected Vaccines</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <section class="schedule-vax">
+            <div class="flex items-center mb-4">
+              <div class="btn btn-zumthor btn-icon shadow border border-white">
+                <span><i class="fa-solid fa-clock"></i></span>
+              </div>
+              <span class="font-semibold text-lg text-blue-950">Schedule your vaccinations</span>
+            </div>
+            <section class="schedule-vax-form">
+              <ul class="schedule-vax-list">
+                <li class="schedule-vax-list-item">
+                  <div class="schedule-vax-content">
+                    <div class="row-span-2">
+                      <div class="btn btn-zumthor btn-icon mr-2">
+                        <span><i class="fa-solid fa-location-pin"></i></span>
+                      </div>
                     </div>
-                    <span class="hero-list-title">Best protection</span>
+                    <div class="row-span-2"></div>
+                    <div class="row-span-2 flex items-center">
+                      <span class="font-semibold text-xl">Location</span>
+                    </div>
+                    <div class="row-span-2">
+                      <span class="text-blue-950 font-bold text-xl">Jakarta Utara</span>
+                    </div>
                   </div>
                 </li>
-                <li>
-                  <div class="hero-list-item flex items-center">
-                    <div class="hero-list-avatar btn btn-icon btn-yellow shadow">
-                      <span><i class="fa-solid fa-star"></i></span>
+                <li class="schedule-vax-list-item">
+                  <div class="schedule-vax-content">
+                    <div class="row-span-2">
+                      <div class="btn btn-zumthor btn-icon mr-2">
+                        <span><i class="fa-solid fa-calendar-days"></i></span>
+                      </div>
                     </div>
-                    <span class="hero-list-title">Selected Vaccines</span>
+                    <div class="row-span-2"></div>
+                    <div class="row-span-2 flex items-center">
+                      <span class="font-semibold text-xl">Date</span>
+                    </div>
+                    <div class="row-span-2">
+                      <span class="text-blue-950 font-bold text-xl">08 July 2021</span>
+                    </div>
                   </div>
+                </li>
+                <li class="schedule-vax-list-item">
+                  <div class="schedule-vax-content">
+                    <div class="row-span-2">
+                      <div class="btn btn-zumthor btn-icon mr-2">
+                        <span><i class="fa-solid fa-syringe"></i></span>
+                      </div>
+                    </div>
+                    <div class="row-span-2"></div>
+                    <div class="row-span-2 flex items-center">
+                      <span class="font-semibold text-xl">Vaccine Type</span>
+                    </div>
+                    <div class="row-span-2">
+                      <span class="text-blue-950 font-bold text-xl">Moderna</span>
+                    </div>
+                  </div>
+                </li>
+                <li class="submit-button">
+                  <button class="btn btn-sapphire">Submit</button>
                 </li>
               </ul>
-            </div>
-            <section class="schedule-vax">
-              <div class="flex items-center mb-4">
-                <div class="btn btn-zumthor btn-icon shadow border border-white">
-                  <span><i class="fa-solid fa-clock"></i></span>
-                </div>
-                <span class="font-semibold text-lg text-blue-950">Schedule your vaccinations</span>
-              </div>
-              <section class="schedule-vax-form">
-                <ul class="schedule-vax-list">
-                  <li class="schedule-vax-list-item">
-                    <div class="schedule-vax-content">
-                      <div class="row-span-2">
-                        <div class="btn btn-zumthor btn-icon mr-2">
-                          <span><i class="fa-solid fa-location-pin"></i></span>
-                        </div>
-                      </div>
-                      <div class="row-span-2"></div>
-                      <div class="row-span-2 flex items-center">
-                        <span class="font-semibold text-xl">Location</span>
-                      </div>
-                      <div class="row-span-2">
-                        <span class="text-blue-950 font-bold text-xl">Jakarta Utara</span>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="schedule-vax-list-item">
-                    <div class="schedule-vax-content">
-                      <div class="row-span-2">
-                        <div class="btn btn-zumthor btn-icon mr-2">
-                          <span><i class="fa-solid fa-calendar-days"></i></span>
-                        </div>
-                      </div>
-                      <div class="row-span-2"></div>
-                      <div class="row-span-2 flex items-center">
-                        <span class="font-semibold text-xl">Date</span>
-                      </div>
-                      <div class="row-span-2">
-                        <span class="text-blue-950 font-bold text-xl">08 July 2021</span>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="schedule-vax-list-item">
-                    <div class="schedule-vax-content">
-                      <div class="row-span-2">
-                        <div class="btn btn-zumthor btn-icon mr-2">
-                          <span><i class="fa-solid fa-syringe"></i></span>
-                        </div>
-                      </div>
-                      <div class="row-span-2"></div>
-                      <div class="row-span-2 flex items-center">
-                        <span class="font-semibold text-xl">Vaccine Type</span>
-                      </div>
-                      <div class="row-span-2">
-                        <span class="text-blue-950 font-bold text-xl">Moderna</span>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="submit-button">
-                    <button class="btn btn-sapphire">Submit</button>
-                  </li>
-                </ul>
-              </section>
             </section>
-          </div>
+          </section>
         </div>
       </div>
     </section>
+
     <section class="why-should">
       <div class="container">
         <div>
