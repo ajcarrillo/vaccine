@@ -317,6 +317,36 @@ p {
     .why-cards-container {
         @apply grid grid-cols-2 gap-4;
     }
+
+    .preparation-content {}
+
+    .preparation>.preparation-content>.preparation-wrapper>.hero-gradient {
+        height: 100%;
+        left: 0;
+        @apply w-1/2;
+    }
+
+    .preparation-intro {
+        @apply w-1/2 ml-auto pl-4;
+    }
+
+    .hero-gradient-white {
+        @apply bg-white;
+        height: 30%;
+    }
+
+    .preparation-img {
+        background-image: url('../img/img02.png');
+        background-size: cover;
+        background-position: 20% 100%;
+        background-repeat: no-repeat;
+        height: 80%;
+        @apply absolute bottom-0 w-full;
+    }
+
+    .preparation-list-item {
+        @apply w-1/2 ml-auto;
+    }
 }
 
 @media screen and (min-width:1024px) {
