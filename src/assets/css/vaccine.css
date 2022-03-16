@@ -355,9 +355,16 @@ p {
     .card-contact-container>.card {
         @apply mb-0;
     }
+
+    .emergency-contact-wrapper>.hero-gradient {
+        @apply hidden;
+    }
 }
 
 @media screen and (min-width:1024px) {
+    header {}
+
+
     .navbar-menu {
         @apply grid grid-cols-5
     }
@@ -416,5 +423,24 @@ p {
     .preparation-img {
         background-size: contain;
         background-position: center;
+    }
+
+    .emergency-contact-content {
+        @apply w-1/2;
+    }
+
+    .emergency-contact-wrapper>.hero-gradient {
+        @apply block;
+        width: 40%;
+    }
+
+    .emergency-contact-img {
+        background-image: url('../img/img03.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .preparation>.preparation-content>.preparation-wrapper>.hero-gradient {
+        width: 40%;
     }
 }
