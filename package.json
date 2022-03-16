@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "watch-css": "npx tailwindcss -i ./src/assets/css/vaccine.css -o ./src/assets/css/vaccine_build.css --watch"
+    "watch-css": "npx tailwindcss -i ./src/assets/css/vaccine.css -o ./src/assets/css/vaccine_build.css --watch",
+    "build-css": "npx tailwindcss -i ./src/assets/css/vaccine.css -o ./src/assets/css/vaccine_build.css --minify"
   },
   "author": "",
   "license": "ISC",
