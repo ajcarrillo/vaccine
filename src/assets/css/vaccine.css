@@ -344,7 +344,7 @@ p {
         @apply absolute bottom-0 w-full;
     }
 
-    .preparation-list-item {
+    .preparation-list {
         @apply w-1/2 ml-auto;
     }
 
@@ -366,11 +366,55 @@ p {
         height: 100%;
     }
 
+    .hero-title {
+        @apply text-6xl;
+    }
+
+    .hero-list {
+        @apply grid grid-cols-2
+    }
+
+    .hero-list-container::after {
+        border-top: 104px solid transparent;
+        border-right: 104px solid #f4f6fb;
+        border-bottom: 104px solid transparent;
+        top: -82px;
+    }
+
+    .schedule-vax {
+        @apply pb-4;
+    }
+
+    .schedule-vax-form {
+        @apply w-3/4;
+    }
+
+    .schedule-vax-list {
+        @apply grid grid-cols-4
+    }
+
+    .submit-button {
+        @apply self-center
+    }
+
+    .submit-button>button {
+        height: 60px
+    }
+
     .why-should-intro {
         @apply w-1/3;
     }
 
     .why-cards-container {
         @apply grid grid-cols-4 gap-4;
+    }
+
+    .hero-gradient-white {
+        height: 40%;
+    }
+
+    .preparation-img {
+        background-size: contain;
+        background-position: center;
     }
 }
